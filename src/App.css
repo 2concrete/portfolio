@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-@media only screen and (max-width: 900px) {
-  .main-container {
-    width: 80% !important;
-  }
+.main {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  width: 48rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.main-container {
-  width: 60%;
+.split {
+  display: flex;
+  justify-content: space-between;
 }
 
 body {
   padding: 0;
   margin: 0;
   font-family: rubik;
+  color: #343434;
 }
 
 #root {

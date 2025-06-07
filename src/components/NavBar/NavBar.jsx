@@ -26,7 +26,10 @@ const NavBar = () => {
               <a href="https://github.com/2concrete" data-feather="github"></a>
             </li>
             <li>
-              <a href data-feather="linkedin"></a>
+              <a
+                href="https://www.linkedin.com/in/daniel-peace-0420ba368/"
+                data-feather="linkedin"
+              ></a>
             </li>
           </ul>
         </div>
