@@ -6,16 +6,20 @@
   }
 }
 
+.main-container {
+  width: 60%;
+}
+
 body {
   padding: 0;
   margin: 0;
-  display: flex;
-  justify-content: center;
   font-family: rubik;
 }
 
-.main-container {
-  width: 50%;
+#root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 nav {
@@ -49,12 +53,19 @@ nav li:hover {
   transform: translateY(-3px);
 }
 
+.about {
+  display: flex;
+  justify-content: space-between;
+}
+
 .about h1 {
-  font-size: 40px;
+  font-size: 50px;
   margin: 20px 0px 0px 0px;
   font-weight: 400;
+  text-wrap: nowrap;
 }
 
 .about p {
+  font-size: 17px;
   line-height: 1.3;
 }
