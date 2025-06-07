@@ -1,0 +1,17 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.about h1 {
+  font-size: 50px;
+  margin: 20px 0px 0px 0px;
+  font-weight: 400;
+  text-wrap: nowrap;
+}
+
+.about p {
+  font-size: 17px;
+  line-height: 1.3;
+}
