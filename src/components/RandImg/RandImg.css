@@ -16,6 +16,7 @@
   position: absolute;
   top: 10px;
   left: 10px;
+  border: none;
   background-color: rgba(255, 255, 255, 0.211);
   backdrop-filter: blur(10px);
   border-radius: 10px;

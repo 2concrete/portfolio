@@ -2,6 +2,7 @@ import "./App.css";
 import About from "./components/About/About";
 import NavBar from "./components/NavBar/NavBar";
 import RandImg from "./components/RandImg/RandImg";
+import Tech from "./components/Tech/Tech";
 
 function App() {
   return (
@@ -9,7 +10,11 @@ function App() {
       <div className="main">
         <NavBar />
         <div className="split">
-          <About />
+          <div>
+            <About />
+            <Tech />
+          </div>
+
           <RandImg />
         </div>
       </div>

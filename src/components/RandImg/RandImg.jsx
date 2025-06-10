@@ -9,7 +9,6 @@ const RandImg = () => {
   const [imgUrl, setImgUrl] = useState("");
 
   const getData = async () => {
-    feather.replace();
     const response = await fetch(
       `https://api.thecatapi.com/v1/images/search?api_key=${API_KEY}`
     );
@@ -18,19 +17,21 @@ const RandImg = () => {
   };
 
   useEffect(() => {
-    getData();
+    feather.replace();
+  }, [imgUrl]);
+
+  useEffect(() => {
+    getData(); // load first image
   }, []);
 
   return (
     <section className="random-image">
       <div className="image-container">
-        <button
-          className="image-button"
-          onClick={getData()}
-          data-feather="refresh-cw"
-        ></button>
+        <button className="image-button" onClick={getData}>
+          <i data-feather="refresh-cw"></i>
+        </button>
         {imgUrl && (
-          <img className="image" loading="lazy" src={imgUrl} alt="Cat Image" />
+          <img className="image" loading="lazy" src={imgUrl} alt="Random Cat" />
         )}
       </div>
     </section>
