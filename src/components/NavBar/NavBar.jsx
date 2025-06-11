@@ -1,6 +1,7 @@
 import feather from "feather-icons";
 import { useEffect } from "react";
 import "./NavBar.css";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   useEffect(() => {
@@ -11,22 +12,33 @@ const NavBar = () => {
       <nav>
         <ul className="flex">
           <li>
-            <a>home</a>
+            <Link className="link" to="/">
+              home
+            </Link>
           </li>
           <li>
-            <a>projects</a>
+            <Link className="link" to="/projects">
+              projects
+            </Link>
           </li>
           <li>
-            <a>contact</a>
+            <Link className="link" to="/contact">
+              contact
+            </Link>
           </li>
         </ul>
         <div className="flex">
           <ul>
             <li>
-              <a href="https://github.com/2concrete" data-feather="github"></a>
+              <a
+                className="link"
+                href="https://github.com/2concrete"
+                data-feather="github"
+              ></a>
             </li>
             <li>
               <a
+                className="link"
                 href="https://www.linkedin.com/in/daniel-peace-0420ba368/"
                 data-feather="linkedin"
               ></a>
