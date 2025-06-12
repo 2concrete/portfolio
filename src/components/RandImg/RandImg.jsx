@@ -30,9 +30,7 @@ const RandImg = () => {
         <button className="image-button" onClick={getData}>
           <i data-feather="refresh-cw"></i>
         </button>
-        {imgUrl && (
-          <img className="image" loading="lazy" src={imgUrl} alt="Random Cat" />
-        )}
+        {imgUrl && <img className="image" loading="lazy" src={imgUrl} />}
       </div>
     </section>
   );
