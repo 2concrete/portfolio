@@ -24,7 +24,7 @@ const RandomCat = () => {
         <RefreshCcw className="stroke-2 hover:animate-spin" />
       </button>
       <img
-        className="w-60 h-60 rounded-sm bg-black object-cover"
+        className="lg:w-90 lg:h-90 rounded-sm bg-black object-cover"
         src={catImg[0]?.url}
       />
     </div>
