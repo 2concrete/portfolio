@@ -17,7 +17,10 @@ const RandomCat = () => {
 
   return (
     <div className="mt-10">
-      <button className="absolute p-2 hover:opacity-80 transition-all rounded-sm m-1 cursor-pointer bg-white opacity-50 backdrop-blur-lg">
+      <button
+        onClick={() => getImg()}
+        className="absolute p-2 hover:opacity-80 transition-all rounded-sm m-1 cursor-pointer bg-white opacity-50 backdrop-blur-lg"
+      >
         <RefreshCcw className="stroke-2 hover:animate-spin" />
       </button>
       <img
