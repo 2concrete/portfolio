@@ -1,5 +1,6 @@
-import { Github, Sun } from "lucide-react";
+import { Sun } from "lucide-react";
 import { NavLink } from "react-router";
+import SocialLink from "./SocialLink";
 
 const Navbar = () => {
   return (
@@ -28,14 +29,7 @@ const Navbar = () => {
           </ul>
           <ul className="flex gap-5">
             <li>
-              <a className="cursor-pointer text-neutral-900 hover:opacity-80 transition-all">
-                <Sun />
-              </a>
-            </li>
-            <li>
-              <a className="cursor-pointer text-neutral-900 hover:opacity-80 transition-all hover:animate-spin">
-                <Github />
-              </a>
+              <SocialLink Icon={Sun} />
             </li>
           </ul>
         </div>
