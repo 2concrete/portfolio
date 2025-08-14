@@ -3,7 +3,7 @@ const SocialLink = ({ Icon, href }) => {
     <a
       href={href}
       target="_blank"
-      className="cursor-pointer text-neutral-900 hover:opacity-80 transition-all"
+      className="cursor-pointer hover:opacity-80 transition-all"
     >
       {Icon && <Icon />}
     </a>

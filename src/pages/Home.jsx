@@ -4,7 +4,7 @@ import RandomCat from "../components/RandomCat";
 
 const Home = () => {
   return (
-    <div className="w-3xl mx-auto">
+    <div className="w-3xl mx-auto dark:text-neutral-100">
       <Navbar />
       <div className="flex justify-between gap-10">
         <About />
