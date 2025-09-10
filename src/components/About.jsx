@@ -3,7 +3,7 @@ import { SiGit, SiJavascript, SiReact, SiTailwindcss } from "react-icons/si";
 
 const About = () => {
   return (
-    <>
+    <div>
       <p className="text-5xl mb-1">hi, im daniel 👋</p>
       <p className="text-md flex items-center mb-3">
         <LuChevronRight /> perth, australia
@@ -15,7 +15,7 @@ const About = () => {
         <SiJavascript size={25} />
         <SiGit size={25} />
       </p>
-    </>
+    </div>
   );
 };
 

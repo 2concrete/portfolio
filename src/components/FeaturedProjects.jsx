@@ -2,7 +2,7 @@ import FeaturedProject from "./FeaturedProject";
 
 const FeaturedProjects = () => {
   return (
-    <>
+    <div>
       <p className="text-3xl mt-10 mb-5">featured projects</p>
       <div className="grid grid-cols-2">
         <FeaturedProject
@@ -13,7 +13,7 @@ const FeaturedProjects = () => {
           github="https://github.com/2concrete/todolist-app"
         />
       </div>
-    </>
+    </div>
   );
 };
 

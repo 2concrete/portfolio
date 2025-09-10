@@ -4,7 +4,7 @@ import { LuExternalLink } from "react-icons/lu";
 
 const FeaturedProject = ({ title, desc, github, link, image }) => {
   return (
-    <>
+    <div>
       <img src={image} className="rounded shadow-md" />
       <div className="p-1">
         <div className="mb-1 flex justify-between mt-2 items-center">
@@ -20,7 +20,7 @@ const FeaturedProject = ({ title, desc, github, link, image }) => {
         </div>
         <p>{desc}</p>
       </div>
-    </>
+    </div>
   );
 };
 
