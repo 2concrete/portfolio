@@ -7,13 +7,15 @@ const RandomCat = () => {
   const [rotation, setRotation] = useState(0);
 
   const getRandomImage = async () => {
-    const response = await fetch("https://api.thecatapi.com/v1/images/search");
+    const response = await fetch(
+      "https://api.thecatapi.com/v1/images/search?api_key=api_keylive_5KTdnuXxmukJo7KjjHAOmxltfVKURURsJDF4CXa3FAAGgRaxCjT5hOm57o786vUt"
+    );
     const data = await response.json();
     setImage(data[0]);
   };
 
   const handleClick = () => {
-    setRotation((prev) => prev + 360);
+    setRotation((prev) => prev + 720);
   };
 
   useEffect(() => {
@@ -34,7 +36,7 @@ const RandomCat = () => {
             >
               <motion.div
                 animate={{ rotate: rotation }}
-                transition={{ duration: 0.5, ease: "easeInOut" }}
+                transition={{ duration: 1, ease: "easeInOut" }}
               >
                 <FiRefreshCcw className="cursor-pointer" />
               </motion.div>
