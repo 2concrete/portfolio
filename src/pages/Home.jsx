@@ -5,14 +5,14 @@ import RandomCat from "../components/RandomCat";
 
 const Home = () => {
   return (
-    <div>
+    <>
       <NavBar />
       <div className="flex mt-20 justify-between">
         <About />
         <RandomCat />
       </div>
       <FeaturedProjects />
-    </div>
+    </>
   );
 };
 
