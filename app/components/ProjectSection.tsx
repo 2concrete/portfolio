@@ -1,5 +1,4 @@
 import { FaGithub } from "react-icons/fa";
-import { MdOutlineInsertLink } from "react-icons/md";
 
 const ProjectSection = () => {
   const projects = [
