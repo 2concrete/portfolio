@@ -1,6 +1,6 @@
 import { FaGithub } from "react-icons/fa";
 
-const ProjectSection = () => {
+const Projects = () => {
   const projects = [
     {
       title: "minimalist",
@@ -10,15 +10,19 @@ const ProjectSection = () => {
   ];
 
   return (
-    <div>
+    <div className="mb-10">
       <p className="text-2xl mb-5">projects</p>
       {projects.map((project) => {
         return (
           <div key={project.title} className="flex justify-between">
             <div className="flex-col flex">
               <span className="flex items-center gap-2">
-                {" "}
-                <p className="text-lg">{project.title}</p>
+                <a
+                  href="https://minimalist.ws"
+                  className="text-lg hover:opacity-70 transition-all"
+                >
+                  {project.title}
+                </a>
                 <a href="https://github.com/2concrete/minimalist-v2">
                   <FaGithub className="size-4 cursor-pointer hover:opacity-70 transition-all" />
                 </a>
@@ -28,7 +32,7 @@ const ProjectSection = () => {
               <div className="flex gap-1">
                 {project.tags.map((tag, idx) => {
                   return (
-                    <div className="text-xs opacity-50 rounded" key={tag}>
+                    <div className="text-xs opacity-50" key={tag}>
                       {tag}
                       {idx < project.tags.length - 1 ? "," : ""}
                     </div>
@@ -36,14 +40,7 @@ const ProjectSection = () => {
                 })}
               </div>
             </div>
-            <div className="flex gap-2">
-              <a
-                href="https://minimalist.ws"
-                className="cursor-pointer hover:opacity-70 transition-all h-fit"
-              >
-                try it
-              </a>
-            </div>
+            <div className="flex gap-2"></div>
           </div>
         );
       })}
@@ -51,4 +48,4 @@ const ProjectSection = () => {
   );
 };
 
-export default ProjectSection;
+export default Projects;
