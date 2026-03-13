@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import Education from "./components/Education";
 import ProjectSection from "./components/Projects";
 import RandomCat from "./components/RandomCat";
@@ -16,6 +17,7 @@ export default function Home() {
           <Education />
         </section>
       </main>
+      <Analytics />
     </>
   );
 }
