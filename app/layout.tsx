@@ -8,8 +8,8 @@ const interSans = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "portfolio",
-  description: "daniel's portfolio",
+  title: "concrete.codes",
+  description: "concrete's dev portfolio",
 };
 
 export default function RootLayout({
