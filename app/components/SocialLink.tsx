@@ -8,7 +8,7 @@ type SocialLinkProps = {
 const SocialLink = ({ icon: Icon, link }: SocialLinkProps) => {
   return (
     <a href={link}>
-      <Icon className="size-6 cursor-pointer hover:opacity-70 transition-all" />
+      <Icon className="size-6 cursor-pointer hover:opacity-70 transition-all active:scale-90" />
     </a>
   );
 };
