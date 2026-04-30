@@ -10,6 +10,13 @@ const Projects = () => {
       link: "https://minimalist.ws",
     },
     {
+      title: "dreamer",
+      description: "dream tracking website",
+      tags: ["nextjs", "react", "tailwindcss, clerkAuth, convexDB"],
+      github: "https://github.com/2concrete/dreamer",
+      link: "https://wrd-hazel.vercel.app/?text=work%20in%20progress",
+    },
+    {
       title: "wrd",
       description: "random website to display text",
       tags: ["nextjs", "react", "tailwindcss", "convexDB"],
