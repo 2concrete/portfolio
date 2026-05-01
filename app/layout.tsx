@@ -9,7 +9,7 @@ const interSans = Inter({
 
 export const metadata: Metadata = {
   title: "concrete.codes",
-  description: "concrete's dev portfolio",
+  description: "",
 };
 
 export default function RootLayout({
