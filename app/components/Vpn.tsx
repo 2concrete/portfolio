@@ -8,7 +8,7 @@ export const Vpn = () => {
         <span className="text-3xl">no lag vpn</span>
         <span className="text-sm mb-6">2 Devices per Subscription</span>
         <div>
-          <ol className="mb-10">
+          <ol className="mb-10 text-center">
             <li>vpn server is located in western australia</li>
             <li>completely bypasses all school wifi blockers</li>
             <li>gives access to all social media and all games</li>
