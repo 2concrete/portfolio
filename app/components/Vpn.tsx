@@ -28,8 +28,6 @@ export const Vpn = () => {
               if your not a fan, just reply to the instruction email and ask for
               a refund
             </li>
-
-            <li className="text-xs">(you will be kicked off the vpn)</li>
           </ol>
         </div>
 
