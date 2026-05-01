@@ -9,7 +9,7 @@ export const Vpn = () => {
         <span className="text-sm mb-6">2 Devices per Subscription</span>
         <div>
           <ol className="mb-10">
-            <li>vpn server is located in rockingham</li>
+            <li>vpn server is located in rockingham, wa</li>
             <li>completely bypasses all school wifi firewalls</li>
             <li>gives access to all social media and all games</li>
             <li>no disconnects, instant connection</li>
