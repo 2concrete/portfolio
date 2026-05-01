@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import Link from "next/link";
 import SocialLink from "./SocialLink";
 
 const Top = () => {
@@ -10,12 +11,15 @@ const Top = () => {
           <p>web developer</p>
           <p className="text-sm opacity-70">perth, australia</p>
         </div>
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-center">
           <SocialLink icon={FaGithub} link="https://github.com/2concrete" />
           <SocialLink
             icon={FaLinkedin}
             link="https://www.linkedin.com/in/danielpeace1"
           />
+          <Link href="/vpn" className="text-sm relative -top-px">
+            buy my vpn
+          </Link>
         </div>
       </div>
     </>
