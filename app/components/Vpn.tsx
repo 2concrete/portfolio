@@ -34,7 +34,7 @@ export const Vpn = () => {
         </div>
 
         <stripe-buy-button
-          buy-button-id="buy_btn_1TS9yyCxzSTl9eCSpai2BEIv"
+          buy-button-id="buy_btn_1TSHXyCxzSTl9eCSxuy9H66Q"
           publishable-key="pk_live_51TNaerCxzSTl9eCSeThqmCPCMHtip8Wk0i3gzXkKcOppPMtb02h6gp8tkap7SKMpzRP24Hfoy41pftaodYawVre300JlmTJMH6"
         />
         <div>
