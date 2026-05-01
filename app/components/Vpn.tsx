@@ -21,6 +21,15 @@ export const Vpn = () => {
             </li>
             <li className="text-xs">*not school desktops</li>
             <li className="text-xs">*requires app install</li>
+            <br />
+          </ol>
+          <ol className="flex flex-col items-center mb-5 gap-2">
+            <li className="text-xs text-center w-60">
+              if your not a fan, just reply to the instruction email and ask for
+              a refund
+            </li>
+
+            <li className="text-xs">(you will be kicked off the vpn)</li>
           </ol>
         </div>
 
