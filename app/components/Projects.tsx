@@ -5,7 +5,7 @@ const Projects = () => {
     {
       title: "minimalist",
       description: "hyper minimal todolist",
-      tags: ["nextjs", "react", "tailwindcss", "convexDB", "clerk"],
+      tags: ["nextjs", "react", "tailwindcss", "convexDB", "clerkAuth"],
       github: "https://github.com/2concrete/minimalist",
       link: "https://minimalist.ws",
     },
