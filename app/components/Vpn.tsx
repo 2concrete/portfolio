@@ -10,7 +10,7 @@ export const Vpn = () => {
         <div>
           <ol className="mb-10">
             <li>vpn server is located in western australia</li>
-            <li>completely bypasses all school wifi firewalls</li>
+            <li>completely bypasses all school wifi blockers</li>
             <li>gives access to all social media and all games</li>
             <li>no disconnects, instant connection</li>
           </ol>
