@@ -34,3 +34,23 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
+/* Shimmer effect for star icon */
+@keyframes shimmer {
+  0% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    opacity: 0.6;
+    transform: rotate(10deg) scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(0deg) scale(1);
+  }
+}
+
+.shimmer {
+  animation: shimmer 2s ease-in-out infinite;
+}
