@@ -54,8 +54,8 @@ const RandomCat = () => {
                     preload={true}
                     unoptimized
                     style={{
-                      width: 250,
-                      height: 250,
+                      width: "clamp(120px, 70vw, 250px)",
+                      height: "clamp(120px, 70vw, 250px)",
                       objectFit: "cover",
                       borderRadius: 3,
                     }}
