@@ -14,7 +14,7 @@ const Projects = () => {
       description: "dream tracking website",
       tags: ["nextjs", "react", "tailwindcss, clerkAuth, convexDB"],
       github: "https://github.com/2concrete/dreamer",
-      link: "https://wrd-hazel.vercel.app/?text=work%20in%20progress",
+      link: "https://dreamer-red.vercel.app/",
     },
     {
       title: "wrd",
