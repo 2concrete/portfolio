@@ -55,9 +55,9 @@ const Top = () => {
             icon={FaLinkedin}
             link="https://www.linkedin.com/in/danielpeace1"
           />
-          <Link href="/vpn" className="text-sm relative -top-px">
-            <a>buy my vpn</a>
-          </Link>
+          <a href="/vpn" className="text-sm relative -top-px">
+            buy my vpn
+          </a>
         </div>
       </div>
     </>
