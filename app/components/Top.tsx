@@ -5,7 +5,6 @@ import SocialLink from "./SocialLink";
 import { IoStar } from "react-icons/io5";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
-import "../globals.css";
 
 const Top = () => {
   const [shake, setShake] = useState(false);
@@ -29,7 +28,7 @@ const Top = () => {
 
           <span className="flex gap-1 items-center relative">
             <p>web developer</p>
-            <Link
+            <a
               className="relative hover:opacity-60 transition-all duration-400"
               href={"https://concrete.seagull-little.ts.net/"}
             >
@@ -46,7 +45,7 @@ const Top = () => {
               >
                 <IoStar size={12} />
               </motion.div>
-            </Link>
+            </a>
           </span>
           <p className="text-sm opacity-70">perth, australia</p>
         </div>
@@ -57,7 +56,7 @@ const Top = () => {
             link="https://www.linkedin.com/in/danielpeace1"
           />
           <Link href="/vpn" className="text-sm relative -top-px">
-            buy my vpn
+            <a>buy my vpn</a>
           </Link>
         </div>
       </div>
