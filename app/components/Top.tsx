@@ -1,6 +1,5 @@
 "use client";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-import Link from "next/link";
 import SocialLink from "./SocialLink";
 import { IoStar } from "react-icons/io5";
 import { motion } from "motion/react";
