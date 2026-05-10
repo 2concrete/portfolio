@@ -10,7 +10,7 @@ const page = () => {
             <Script src="https://js.stripe.com/v3/buy-button.js" async />
             <div className="flex-col flex items-center mx-4">
               <span className="text-3xl">no lag vpn</span>
-              <span className="text-sm mb-6">2 Devices per Subscription</span>
+              <span className="text-sm mb-6">two devices per subscription</span>
               <div>
                 <ol className="mb-10 text-center">
                   <li>vpn server is located in western australia</li>
