@@ -54,12 +54,6 @@ const Top = () => {
             icon={FaLinkedin}
             link="https://www.linkedin.com/in/danielpeace1"
           />
-          <a
-            href="https://concrete.seagull-little.ts.net/resume"
-            className="text-sm relative -top-px"
-          >
-            resume
-          </a>
         </div>
       </div>
     </>
