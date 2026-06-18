@@ -30,6 +30,13 @@ const Projects = () => {
       github: "https://github.com/2concrete/portfolio",
       link: "https://concrete.codes",
     },
+    {
+      title: "dotfiles",
+      description: "my windows .config folder",
+      tags: ["komorebi, yasb, yazi, btm, ohmyposh, winfetch"],
+      github: "https://github.com/2concrete/dotfiles",
+      link: "",
+    },
   ];
 
   return (
