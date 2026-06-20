@@ -10,6 +10,11 @@ const Education = () => {
           </p>
           <p className="text-xs opacity-50">2020-2025</p>
         </span>
+        <span>
+          <p className="text-lg">north metro tafe</p>
+
+          <p className="text-xs opacity-50">2026-present</p>
+        </span>
       </div>
     </div>
   );
