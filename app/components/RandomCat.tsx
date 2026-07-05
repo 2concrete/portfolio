@@ -42,6 +42,7 @@ const RandomCat = () => {
                   animate={{ opacity: imageLoaded ? 1 : 0 }} // ← Only fade in when loaded
                   transition={{ duration: 0.3 }}
                   exit={{ opacity: 0 }}
+                  className="relative z-10"
                 >
                   <Image
                     loading="eager"
@@ -53,8 +54,8 @@ const RandomCat = () => {
                     preload={true}
                     unoptimized
                     style={{
-                      width: 250,
-                      height: 250,
+                      width: "clamp(120px, 70vw, 250px)",
+                      height: "clamp(120px, 70vw, 250px)",
                       objectFit: "cover",
                       borderRadius: 3,
                     }}
@@ -69,7 +70,7 @@ const RandomCat = () => {
                     animate={{ opacity: 1 }}
                     transition={{ duration: 0.5 }}
                     exit={{ opacity: 0 }}
-                    className="absolute flex justify-center items-center"
+                    className="absolute inset-0 z-0 flex items-center justify-center"
                   >
                     <div className="rounded-full w-10 h-10 border-2 border-transparent border-t-neutral-700 border-r-neutral-700 border-b-neutral-700 animate-spin" />
                   </motion.div>

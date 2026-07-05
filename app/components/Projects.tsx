@@ -5,9 +5,16 @@ const Projects = () => {
     {
       title: "minimalist",
       description: "hyper minimal todolist",
-      tags: ["nextjs", "react", "tailwindcss", "convexDB", "clerk"],
-      github: "https://github.com/2concrete/minimalist",
+      tags: ["nextjs", "react", "tailwindcss", "convexDB", "clerkAuth"],
+      github: "https://github.com/2concrete/minimalist-v2",
       link: "https://minimalist.ws",
+    },
+    {
+      title: "dreamer",
+      description: "dream tracking website",
+      tags: ["nextjs", "react", "tailwindcss, clerkAuth, convexDB"],
+      github: "https://github.com/2concrete/dreamer",
+      link: "https://dreamer-red.vercel.app/",
     },
     {
       title: "wrd",
@@ -22,6 +29,13 @@ const Projects = () => {
       tags: ["nextjs", "react", "tailwindcss"],
       github: "https://github.com/2concrete/portfolio",
       link: "https://concrete.codes",
+    },
+    {
+      title: "dotfiles",
+      description: "my windows .config folder",
+      tags: ["komorebi, yasb, yazi, btm, ohmyposh, winfetch"],
+      github: "https://github.com/2concrete/dotfiles",
+      link: "",
     },
   ];
 
