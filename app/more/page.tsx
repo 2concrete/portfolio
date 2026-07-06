@@ -32,33 +32,47 @@ const More = () => {
           <RandomCat />
         </div>
 
-        <div>
-          <p className="text-xl mb-2">homelabbing</p>
-          <p>20k+ asset immich server</p>
-          <p>tailscale mesh vpn network</p>
-          <p>video game server</p>
-          <p className="flex gap-1">
-            self hosting
-            <a
-              className="relative hover:opacity-60 transition-all duration-400 top-2"
-              href={"https://concrete.seagull-little.ts.net/"}
-            >
-              <motion.div
-                animate={
-                  shake
-                    ? {
-                        rotate: [0, -15, 15, -15, 0],
-                        opacity: [1, 0.7, 1, 0.7, 1],
-                      }
-                    : { rotate: 0, opacity: 1 }
-                }
-                transition={{ duration: 0.4 }}
+        <section className="grid grid-cols-2">
+          <div>
+            <p className="text-xl mb-2">homelabbing</p>
+            <p>20k+ asset immich server</p>
+            <p>tailscale mesh vpn network</p>
+            <p>video game server</p>
+            <span className="flex gap-1">
+              <p>self hosting</p>
+              <a
+                className="relative hover:opacity-60 transition-all duration-400 top-2"
+                href={"https://concrete.seagull-little.ts.net/"}
               >
-                <IoStar size={12} />
-              </motion.div>
+                <motion.div
+                  animate={
+                    shake
+                      ? {
+                          rotate: [0, -15, 15, -15, 0],
+                          opacity: [1, 0.7, 1, 0.7, 1],
+                        }
+                      : { rotate: 0, opacity: 1 }
+                  }
+                  transition={{ duration: 0.4 }}
+                >
+                  <IoStar size={12} />
+                </motion.div>
+              </a>
+            </span>
+          </div>
+          <div>
+            <p className="text-xl mb-2">pc building</p>
+            <p>old pc upgraded into server</p>
+            <p>full windows 11 customization</p>
+            <p>2 full custom pc builds</p>
+            <a
+              href="https://au.pcpartpicker.com/user/Lukxer/"
+              className="opacity-70 hover:opacity-100 transition-all"
+            >
+              check out builds
             </a>
-          </p>
-        </div>
+          </div>
+        </section>
       </main>
       <Analytics />
     </>
