@@ -12,7 +12,7 @@ const Education = () => {
         </span>
         <span>
           <p className="text-lg">north metro tafe</p>
-
+          <p className="text-sm opacity-80">diploma of full stack web dev</p>
           <p className="text-xs opacity-50">2026-present</p>
         </span>
       </div>
