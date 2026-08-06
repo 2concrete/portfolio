@@ -35,7 +35,7 @@ const Projects = () => {
       description: "my windows .config folder",
       tags: ["komorebi, yasb, yazi, btm, ohmyposh, winfetch"],
       github: "https://github.com/2concrete/dotfiles",
-      link: "",
+      link: "https://github.com/2concrete/dotfiles",
     },
   ];
 
