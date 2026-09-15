@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 import { useState } from "react";
 
 const InfiniteButton = () => {
-  const [buttonCount, setButtonCount] = useState(1);
+  const [buttonCount, setButtonCount] = useState<number>(1);
   return (
     <section className="flex gap-1 flex-wrap">
       {Array.from({ length: buttonCount }, (_, i) => (
