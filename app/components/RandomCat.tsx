@@ -52,7 +52,7 @@ const RandomCat = () => {
   }, [imageUrl]);
 
   return (
-    <div className="relative flex justify-center items-center border border-neutral-900 rounded-lg w-[250px] h-[250px] shrink-0">
+    <div className="relative flex justify-center items-center border border-neutral-900 rounded-lg w-62.5 h-62.5 shrink-0">
       {imageUrl ? (
         <>
           <AnimatePresence mode="wait">
@@ -124,7 +124,7 @@ const RandomCat = () => {
           </AnimatePresence>
         </>
       ) : (
-        <div className="h-[250px] w-[250px]" />
+        <div className="h-62.5 w-62.5" />
       )}
     </div>
   );
