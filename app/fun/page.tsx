@@ -3,6 +3,7 @@
 import { useState, type ReactElement } from "react";
 import RandomCat from "../components/RandomCat";
 import InfiniteButton from "./components/InfiniteButton";
+import NumberGuesser from "./components/NumberGuesser";
 
 const page = () => {
   const [selected, setSelected] = useState<ReactElement | null>(
@@ -29,7 +30,7 @@ const page = () => {
           </button>
           <button
             className="border border-neutral-600 rounded-full w-10 h-10 cursor-pointer hover:border-neutral-100 transition-all"
-            onClick={() => setSelected(<InfiniteButton />)}
+            onClick={() => setSelected(<NumberGuesser />)}
           >
             2
           </button>
