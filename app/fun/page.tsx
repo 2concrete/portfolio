@@ -2,7 +2,6 @@
 
 import { useState, type ReactElement } from "react";
 import RandomCat from "../components/RandomCat";
-import Selector from "./components/Selector";
 import InfiniteButton from "./components/InfiniteButton";
 
 const page = () => {
@@ -21,7 +20,20 @@ const page = () => {
         <RandomCat />
       </section>
       <section className="flex flex-col gap-4">
-        <Selector onSelect={setSelected} />
+        <nav className="flex gap-4">
+          <button
+            className="border border-neutral-600 rounded-full w-10 h-10 cursor-pointer hover:border-neutral-100 transition-all"
+            onClick={() => setSelected(<InfiniteButton />)}
+          >
+            1
+          </button>
+          <button
+            className="border border-neutral-600 rounded-full w-10 h-10 cursor-pointer hover:border-neutral-100 transition-all"
+            onClick={() => setSelected(<InfiniteButton />)}
+          >
+            2
+          </button>
+        </nav>
         {selected}
       </section>
     </main>
