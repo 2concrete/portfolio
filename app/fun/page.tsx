@@ -4,6 +4,9 @@ import { useState, type ReactElement } from "react";
 import RandomCat from "../components/RandomCat";
 import InfiniteButton from "./components/InfiniteButton";
 import NumberGuesser from "./components/NumberGuesser";
+import Motion from "./components/Motion";
+import Motion2 from "./components/Motion2";
+import Motion3 from "./components/Motion3";
 
 const page = () => {
   const [selected, setSelected] = useState<ReactElement | null>(
@@ -42,6 +45,33 @@ const page = () => {
             }}
           >
             2
+          </button>
+          <button
+            className={`${active === 3 ? "border-neutral-100" : "border-neutral-600"} border rounded-full w-10 h-10 cursor-pointer hover:border-neutral-100 transition-all`}
+            onClick={() => {
+              setActive(3);
+              setSelected(<Motion />);
+            }}
+          >
+            3
+          </button>
+          <button
+            className={`${active === 4 ? "border-neutral-100" : "border-neutral-600"} border rounded-full w-10 h-10 cursor-pointer hover:border-neutral-100 transition-all`}
+            onClick={() => {
+              setActive(4);
+              setSelected(<Motion2 />);
+            }}
+          >
+            4
+          </button>
+          <button
+            className={`${active === 5 ? "border-neutral-100" : "border-neutral-600"} border rounded-full w-10 h-10 cursor-pointer hover:border-neutral-100 transition-all`}
+            onClick={() => {
+              setActive(5);
+              setSelected(<Motion3 />);
+            }}
+          >
+            5
           </button>
         </nav>
         {selected}
