@@ -8,19 +8,17 @@ import { AnimatePresence } from "motion/react";
 export default function Home() {
   return (
     <>
-      <AnimatePresence mode="sync">
-        <main className="scrollbar-hide mb-4 lg:mb-13lg:w-2xl md:w-2xl sm:w-xl w-sm mx-auto mt-16 font-[Inter] flex flex-col gap-20">
-          <section className="flex justify-between">
-            <Top />
-            <RandomCat />
-          </section>
-          <section className="gap-10 lg:flex lg:justify-between md:justify-between">
-            <ProjectSection />
-            <Education />
-          </section>
-        </main>
-        <Analytics />
-      </AnimatePresence>
+      <main className="scrollbar-hide mb-4 lg:mb-13lg:w-2xl md:w-2xl sm:w-xl w-sm mx-auto mt-16 font-[Inter] flex flex-col gap-20">
+        <section className="flex justify-between">
+          <Top />
+          <RandomCat />
+        </section>
+        <section className="gap-10 lg:flex lg:justify-between md:justify-between">
+          <ProjectSection />
+          <Education />
+        </section>
+      </main>
+      <Analytics />
     </>
   );
 }
