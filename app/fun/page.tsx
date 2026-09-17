@@ -15,9 +15,11 @@ const page = () => {
     <main className="scrollbar-hide mb-4 lg:mb-13lg:w-2xl md:w-2xl sm:w-xl w-sm mx-auto mt-16 font-[Inter] flex flex-col gap-20">
       <section className="flex justify-between">
         <div className="flex flex-col">
-          <p className="text-4xl">fun</p>
-          <br />
-          <p>random stuff</p>
+          <h1 className="text-4xl mb-1.5">fun</h1>
+
+          <span className="flex gap-1 items-center relative">
+            <p>random stuff</p>
+          </span>
         </div>
         <RandomCat />
       </section>
