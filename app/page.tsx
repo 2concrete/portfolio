@@ -3,6 +3,7 @@ import Education from "./components/Education";
 import ProjectSection from "./components/Projects";
 import RandomCat from "./components/RandomCat";
 import Top from "./components/Top";
+import { AnimatePresence } from "motion/react";
 
 export default function Home() {
   return (

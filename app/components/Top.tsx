@@ -4,6 +4,7 @@ import SocialLink from "./SocialLink";
 import { IoStar } from "react-icons/io5";
 import { motion } from "motion/react";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 
 const Top = () => {
   const [shake, setShake] = useState(false);
@@ -54,6 +55,7 @@ const Top = () => {
             icon={FaLinkedin}
             link="https://www.linkedin.com/in/danielpeace1"
           />
+          <Link href={"/fun"}>fun</Link>
         </div>
       </div>
     </>
