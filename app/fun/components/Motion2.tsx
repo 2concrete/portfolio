@@ -57,6 +57,7 @@ const Motion2 = () => {
               opacity: 0.7,
               borderRadius: 0.5 + item,
             }}
+            transition={{ duration: 2 }}
             className="text-xs w-10 h-10 border flex items-center justify-center"
             key={item}
           ></motion.span>

@@ -1,12 +1,13 @@
 import { motion } from "motion/react";
 import { ChangeEvent, useState } from "react";
 
-const Motion = () => {
+const Motion3 = () => {
   const [list, setList] = useState<number[]>([]);
   const [amount, setAmount] = useState<string>("");
 
   const handleClick = () => {
     setList((prev) => [...prev, Number((prev.length / 10).toFixed(2))]);
+    setAmount((prev) => (Number(prev) + 1).toString());
   };
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
@@ -26,7 +27,7 @@ const Motion = () => {
   };
 
   return (
-    <div className="flex flex-col items-start">
+    <div className="flex flex-col items-start gap-5">
       <div className="flex gap-2">
         <motion.button
           whileHover={{ opacity: 0.7 }}
@@ -38,7 +39,7 @@ const Motion = () => {
         <input
           type="number"
           placeholder="or enter a number"
-          className="[appearance:textfield] outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+          className="[appearance:textfield] opacity-70 outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
           onChange={handleChange}
           onKeyDown={(e) => {
             if (e.key === "Backspace") {
@@ -52,13 +53,15 @@ const Motion = () => {
       <div className="flex flex-wrap">
         {list.map((item) => (
           <motion.span
-            initial={{ opacity: 0, scale: 0 }}
+            initial={{ opacity: 0, width: 0, height: 0 }}
             animate={{
-              opacity: 0.1,
-              scale: 0.1 + item,
+              opacity: 0.7,
+              width: 20 + item,
+              height: 20 + item,
+              borderRadius: 100,
             }}
             transition={{ duration: 2 }}
-            className="w-10 h-10 border flex items-center justify-center"
+            className="text-xs w-10 h-10 border flex items-center justify-center"
             key={item}
           ></motion.span>
         ))}
@@ -67,4 +70,4 @@ const Motion = () => {
   );
 };
 
-export default Motion;
+export default Motion3;
