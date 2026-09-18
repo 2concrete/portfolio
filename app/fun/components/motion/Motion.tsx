@@ -38,7 +38,7 @@ const Motion = () => {
         <input
           type="number"
           placeholder="or enter a number"
-          className="[appearance:textfield] outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+          className="[appearance:textfield] opacity-70 outline-none [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
           onChange={handleChange}
           onKeyDown={(e) => {
             if (e.key === "Backspace") {
