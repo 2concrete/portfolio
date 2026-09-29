@@ -27,18 +27,51 @@
         top: 0;
         color: #3d3a33;
       }
+
+      .resume-page {
+        width: min(100%, 210mm);
+        height: 297mm;
+        aspect-ratio: 210 / 297;
+        overflow: hidden;
+      }
+
+      @media print {
+        @page {
+          margin: 0;
+          size: A4;
+        }
+
+        html,
+        body {
+          min-height: 0 !important;
+          margin: 0 !important;
+          padding: 0 !important;
+        }
+
+        body {
+          display: block !important;
+          background: #fdfcf9 !important;
+        }
+
+        body > div {
+          width: 210mm !important;
+          height: 297mm !important;
+          max-width: none !important;
+          box-shadow: none !important;
+        }
+      }
     </style>
   </head>
   <body
-    class="bg-[#f5f3ee] font-[Jost] min-h-screen flex items-center justify-center py-8 px-4 font-sans text-[#1a1a18]"
+    class="bg-[#f5f3ee] font-[Jost] min-h-screen flex items-center justify-center py-8 px-4 text-[#1a1a18]"
   >
     <div
-      class="bg-[#fdfcf9] w-full max-w-[760px] shadow-[0_4px_40px_rgba(0,0,0,0.08),0_1px_4px_rgba(0,0,0,0.04)]"
+      class="resume-page bg-[#fdfcf9] shadow-[0_4px_40px_rgba(0,0,0,0.08),0_1px_4px_rgba(0,0,0,0.04)]"
     >
       <div class="px-12 pt-8 pb-6 border-b border-[#e2ddd5]">
         <div>
           <div
-            class="font-normal text-[2.8rem] relative right-1 tracking-[0.05em] uppercase text-[#1a1a18] leading-none mb-2"
+            class="font-normal text-[2.8rem] relative right-1 tracking-wider uppercase text-[#1a1a18] leading-none mb-2"
           >
             Daniel Peace
           </div>
@@ -50,8 +83,10 @@
         </div>
       </div>
 
-      <div class="grid grid-cols-[250px_1fr]">
-        <div class="pl-10 pr-8 py-9 border-r border-[#e2ddd5] bg-[#faf9f6]">
+      <div class="grid min-w-0 grid-cols-[250px_minmax(0,1fr)] h-full">
+        <div
+          class="min-w-0 overflow-hidden pl-10 pr-8 py-9 border-r border-[#e2ddd5] bg-[#faf9f6]"
+        >
           <div class="mb-8">
             <div
               class="text-[0.65rem] font-semibold tracking-[0.25em] uppercase text-[#1a1a18] mb-2"
@@ -121,205 +156,52 @@
               Availability
             </div>
             <div class="w-full h-px bg-[#c8bfad] mb-4"></div>
-            <div class="flex items-center gap-3">
+            <div class="space-y-1 text-[0.68rem] text-[#3d3a33]">
               <div
-                class="grid grid-cols-[1.5rem_repeat(5,1fr)] grid-rows-[auto_repeat(26,11px)] gap-x-[3px] gap-y-0 relative right-1.5 flex-1"
+                class="flex items-center justify-between border-b border-[#e2ddd5] py-1.5"
               >
-                <div class="col-start-[1] row-start-[1]"></div>
-                <div
-                  class="col-start-[2] row-start-[1] text-[0.52rem] font-medium text-center text-[#1a1a18] py-[0.2rem]"
-                >
-                  Mon
-                </div>
-                <div
-                  class="col-start-[3] row-start-[1] text-[0.52rem] font-medium text-center text-[#1a1a18] py-[0.2rem]"
-                >
-                  Tue
-                </div>
-                <div
-                  class="col-start-[4] row-start-[1] text-[0.52rem] font-medium text-center text-[#1a1a18] py-[0.2rem]"
-                >
-                  Wed
-                </div>
-                <div
-                  class="col-start-[5] row-start-[1] text-[0.52rem] font-medium text-center text-[#1a1a18] py-[0.2rem]"
-                >
-                  Thu
-                </div>
-                <div
-                  class="col-start-[6] row-start-[1] text-[0.52rem] font-medium text-center text-[#1a1a18] py-[0.2rem]"
-                >
-                  Fri
-                </div>
-
-                <div
-                  class="col-start-[1] row-start-[2] row-end-[4] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  7am
-                </div>
-                <div
-                  class="col-start-[1] row-start-[4] row-end-[6] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  8am
-                </div>
-                <div
-                  class="col-start-[1] row-start-[6] row-end-[8] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  9am
-                </div>
-                <div
-                  class="col-start-[1] row-start-[8] row-end-[10] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  10am
-                </div>
-                <div
-                  class="col-start-[1] row-start-[10] row-end-[12] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  11am
-                </div>
-                <div
-                  class="col-start-[1] row-start-[12] row-end-[14] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  12pm
-                </div>
-                <div
-                  class="col-start-[1] row-start-[14] row-end-[16] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  1pm
-                </div>
-                <div
-                  class="col-start-[1] row-start-[16] row-end-[18] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  2pm
-                </div>
-                <div
-                  class="col-start-[1] row-start-[18] row-end-[20] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  3pm
-                </div>
-                <div
-                  class="col-start-[1] row-start-[20] row-end-[22] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  4pm
-                </div>
-                <div
-                  class="col-start-[1] row-start-[22] row-end-[24] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  5pm
-                </div>
-                <div
-                  class="col-start-[1] row-start-[24] row-end-[26] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  6pm
-                </div>
-                <div
-                  class="col-start-[1] row-start-[26] row-end-[28] flex items-center justify-end text-[0.46rem] leading-none text-[#8a7f6e] pr-1 pt-[1px]"
-                >
-                  7pm
-                </div>
-
-                <div
-                  class="col-start-[2] row-start-[2] row-end-[28] rounded-[2px] border border-[#a8bf9a] bg-[#e7f0dc]"
-                ></div>
-                <div
-                  class="col-start-[3] row-start-[2] row-end-[28] rounded-[2px] border border-[#a8bf9a] bg-[#e7f0dc]"
-                ></div>
-                <div
-                  class="col-start-[4] row-start-[2] row-end-[28] rounded-[2px] border border-[#a8bf9a] bg-[#e7f0dc]"
-                ></div>
-                <div
-                  class="col-start-[5] row-start-[2] row-end-[28] rounded-[2px] border border-[#a8bf9a] bg-[#e7f0dc]"
-                ></div>
-                <div
-                  class="col-start-[6] row-start-[2] row-end-[28] rounded-[2px] border border-[#a8bf9a] bg-[#e7f0dc]"
-                ></div>
-
-                <div
-                  class="col-start-[2] row-start-[9] row-end-[20] rounded-[2px] border border-[#cdb4a7] bg-[#e8ddd4]"
-                ></div>
-                <div
-                  class="col-start-[2] row-start-[24] row-end-[26] rounded-[2px] border border-[#cdb4a7] bg-[#e8ddd4]"
-                ></div>
-                <div
-                  class="col-start-[3] row-start-[5] row-end-[9] rounded-[2px] border border-[#cdb4a7] bg-[#e8ddd4]"
-                ></div>
-                <div
-                  class="col-start-[4] row-start-[6] row-end-[12] rounded-[2px] border border-[#cdb4a7] bg-[#e8ddd4]"
-                ></div>
-                <div
-                  class="col-start-[5] row-start-[5] row-end-[15] rounded-[2px] border border-[#cdb4a7] bg-[#e8ddd4]"
-                ></div>
-                <div
-                  class="col-start-[6] row-start-[8] row-end-[20] rounded-[2px] border border-[#cdb4a7] bg-[#e8ddd4]"
-                ></div>
-
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[4] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[6] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[8] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[10] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[12] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[14] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[16] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[18] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[20] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[22] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[24] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[26] self-start h-px bg-[#00000014] pointer-events-none"
-                ></div>
-                <div
-                  class="col-start-[2] col-end-[7] row-start-[27] self-end h-px bg-[#00000014] pointer-events-none"
-                ></div>
-
-                <p
-                  class="flex shrink-0 absolute left-36 top-40 text-[0.72rem] font-extralight rotate-90 whitespace-nowrap text-[#1a1a18]"
-                >
-                  free all weekend
-                </p>
+                <span class="font-medium text-[#1a1a18]">Monday</span>
+                <span class="text-[#8a7f6e]">After 4pm</span>
               </div>
-            </div>
-            <div
-              class="mt-1.5 flex items-center gap-2.5 text-[0.5rem] uppercase tracking-[0.14em] text-[#6b6357]"
-            >
-              <div class="flex items-center gap-1">
-                <span
-                  class="inline-block h-2 w-2 rounded-[0.15rem] border border-[#a8bf9a] bg-[#e7f0dc]"
-                ></span
-                >Free
+              <div
+                class="flex items-center justify-between border-b border-[#e2ddd5] py-1.5"
+              >
+                <span class="font-medium text-[#1a1a18]">Tuesday</span>
+                <span class="text-[#8a7f6e]">From 12pm</span>
               </div>
-              <div class="flex items-center gap-1">
-                <span
-                  class="inline-block h-2 w-2 rounded-[0.15rem] border border-[#cdb4a7] bg-[#e8ddd4]"
-                ></span
-                >Busy
+              <div
+                class="flex items-center justify-between border-b border-[#e2ddd5] py-1.5"
+              >
+                <span class="font-medium text-[#1a1a18]">Wednesday</span>
+                <span class="font-medium text-[#607652]">Free</span>
+              </div>
+              <div
+                class="flex items-center justify-between border-b border-[#e2ddd5] py-1.5"
+              >
+                <span class="font-medium text-[#1a1a18]">Thursday</span>
+                <span class="font-medium text-[#607652]">Free</span>
+              </div>
+              <div
+                class="flex items-center justify-between border-b border-[#e2ddd5] py-1.5"
+              >
+                <span class="font-medium text-[#1a1a18]">Friday</span>
+                <span class="font-medium text-[#607652]">Free</span>
+              </div>
+              <div
+                class="flex items-center justify-between border-b border-[#e2ddd5] py-1.5"
+              >
+                <span class="font-medium text-[#1a1a18]">Saturday</span>
+                <span class="font-medium text-[#607652]">Free</span>
+              </div>
+              <div class="flex items-center justify-between py-1.5">
+                <span class="font-medium text-[#1a1a18]">Sunday</span>
+                <span class="font-medium text-[#607652]">Free</span>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="px-11 py-9">
+        <div class="min-w-0 overflow-hidden px-11 py-9">
           <div class="mb-8">
             <div
               class="text-[0.65rem] font-semibold tracking-[0.25em] uppercase text-[#1a1a18] mb-2"
@@ -353,7 +235,7 @@
                 class="text-[0.86rem] font-semibold text-[#1a1a18] tracking-[0.02em]"
                 >Retail Team Member</span
               >
-              <span class="text-[0.74rem] text-[#8a7f6e] tracking-[0.05em]"
+              <span class="text-[0.74rem] text-[#8a7f6e] tracking-wider"
                 >Aug 2026 – Present</span
               >
             </div>
@@ -413,7 +295,7 @@
                 class="text-[0.86rem] font-semibold text-[#1a1a18] tracking-[0.02em]"
                 >Retail Team Member</span
               >
-              <span class="text-[0.74rem] text-[#8a7f6e] tracking-[0.05em]"
+              <span class="text-[0.74rem] text-[#8a7f6e] tracking-wider"
                 >2023 – Apr 2026</span
               >
             </div>
@@ -472,13 +354,13 @@
               References
             </div>
             <div class="w-full h-px bg-[#c8bfad] mb-5"></div>
-            <div class="grid grid-cols-2 gap-6">
+            <div class="grid grid-cols-3 gap-6">
               <div>
                 <div class="text-[0.85rem] font-semibold text-[#1a1a18] mb-1">
                   Taylor Park
                 </div>
                 <div class="text-[0.8rem] font-light text-[#6b6357] italic">
-                  Manager - Toymate Rockingham
+                  Previous Manager
                 </div>
                 <div class="text-[0.8rem] font-light text-[#3d3a33] mt-1">
                   +61 0430 595 062
@@ -489,10 +371,21 @@
                   Steven Bonorchis
                 </div>
                 <div class="text-[0.8rem] font-light text-[#6b6357] italic">
-                  Manager - Getaway Outdoors Cockburn
+                  Manager
                 </div>
                 <div class="text-[0.8rem] font-light text-[#3d3a33] mt-1">
                   +61 407 022 279
+                </div>
+              </div>
+              <div>
+                <div class="text-[0.85rem] font-semibold text-[#1a1a18] mb-1">
+                  Shane Ramsey
+                </div>
+                <div class="text-[0.8rem] font-light text-[#6b6357] italic">
+                  Manager
+                </div>
+                <div class="text-[0.8rem] font-light text-[#3d3a33] mt-1">
+                  +61 407 398 363
                 </div>
               </div>
             </div>
