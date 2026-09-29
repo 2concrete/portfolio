@@ -15,6 +15,11 @@ const Education = () => {
           <p className="text-sm opacity-80">diploma of full stack web dev</p>
           <p className="text-xs opacity-50">2026-present</p>
         </span>
+        <span>
+          <p className="text-lg">south metro tafe</p>
+          <p className="text-sm opacity-80">certifcate III screen and media</p>
+          <p className="text-xs opacity-50">2024-2025</p>
+        </span>
       </div>
     </div>
   );
