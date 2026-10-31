@@ -4,7 +4,7 @@ import Script from "next/script";
 const page = () => {
   return (
     <>
-      <main className="flex h-screen justify-center items-center font-[Inter]">
+      {/* <main className="flex h-screen justify-center items-center font-[Inter]">
         <section className="flex justify-between items-center">
           <>
             <Script src="https://js.stripe.com/v3/buy-button.js" async />
@@ -51,7 +51,7 @@ const page = () => {
           </>
         </section>
         <Analytics />
-      </main>
+      </main> */}
     </>
   );
 };
