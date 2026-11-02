@@ -39,6 +39,7 @@ const Projects = () => {
     },
     {
       title: "payme",
+      link: "https://buy.stripe.com/eVq28qeNwgaWdTf7BDds402",
       tags: [""],
     },
   ];
