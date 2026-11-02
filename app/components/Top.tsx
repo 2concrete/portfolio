@@ -30,7 +30,9 @@ const Top = () => {
             <p>web developer</p>
             <a
               className="relative hover:opacity-60 transition-all duration-400"
-              href={"https://concrete.seagull-little.ts.net/"}
+              href={
+                "https://wrd-hazel.vercel.app/?text=this%20is%20broken,%20it%20will%20work%20eventually"
+              }
             >
               <motion.div
                 animate={
