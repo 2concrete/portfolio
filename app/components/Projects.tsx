@@ -37,6 +37,10 @@ const Projects = () => {
       github: "https://github.com/2concrete/dotfiles",
       link: "https://github.com/2concrete/dotfiles",
     },
+    {
+      title: "payme",
+      tags: [""],
+    },
   ];
 
   return (
@@ -53,9 +57,11 @@ const Projects = () => {
                 >
                   {project.title}
                 </a>
-                <a href={project.github}>
-                  <FaGithub className="size-4 cursor-pointer hover:opacity-70 transition-all" />
-                </a>
+                {project.github && (
+                  <a href={project.github}>
+                    <FaGithub className="size-4 cursor-pointer hover:opacity-70 transition-all" />
+                  </a>
+                )}
               </span>
 
               <p className="text-sm opacity-80">{project.description}</p>
