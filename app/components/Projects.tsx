@@ -7,7 +7,7 @@ const Projects = () => {
       description: "hyper minimal todolist",
       tags: ["nextjs", "react", "tailwindcss", "convexDB", "clerkAuth"],
       github: "https://github.com/2concrete/minimalist-v2",
-      link: "https://minimalist.ws",
+      link: "https://minimalist-zeta.vercel.app/",
     },
     {
       title: "dreamer",
@@ -40,7 +40,7 @@ const Projects = () => {
     {
       title: "payme",
       link: "https://buy.stripe.com/eVq28qeNwgaWdTf7BDds402",
-      tags: [""],
+      tags: ["pls"],
     },
   ];
 
